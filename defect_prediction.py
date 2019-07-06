@@ -170,20 +170,7 @@ plt.show()
 
 
 
-"""
 
-#predicting probability
-y_prob=classifier1.predict_proba(X_test)[:,1]
-plt.hist(y_prob,bins=8)
-plt.show()
-
-#adjusting threshold value
-from sklearn.preprocessing import binarize
-y_pred_class=binarize([y_prob],0.3)[0]
-cm=metrics.confusion_matrix(y_test,y_pred_class)
-accuracy_score=metrics.accuracy_score(y_test,y_pred_class)
-print(cm)
-print(accuracy_score)"""
 
 
 
