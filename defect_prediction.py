@@ -127,11 +127,7 @@ print("recall=",recall_nb)
 fscore_nb=metrics.f1_score(y_test,y_pred_nb,average='macro')
 print("f-score=",fscore_nb)
 
-#by applying k fold validation
-from sklearn.model_selection import cross_val_score
-score_knn=cross_val_score(classifier1,X,y,cv=10,scoring='roc_auc').mean()
-#score_svm=cross_val_score(classifier2,X,y,cv=10,scoring='roc_auc').mean()
-#score_nb=cross_val_score(classifier3,X,y,cv=10,scoring='roc_auc').mean()
+
 
 #visualising plots
 accuracy=np.array([accuracy_score_knn,accuracy_score_svm,accuracy_score_nb])
