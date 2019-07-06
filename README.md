@@ -13,8 +13,12 @@ software bug predicton using machine learning algorithms
  
  ## data cleaning
  after collection of data it is very important to preprocess or clean data before applying it to our model.
- ### various steps of prepocessing
- * to change categorical variable into numerical variable since in this our dependent variable is categorical so we have to convert this.
+ ### various steps of prepocessing:
+ *changing categorical variable into numerical variable - since in this our dependent variable is categorical so we have to convert this.
+ 
+from sklearn.preprocessing import LabelEncoder
+encoder_y=LabelEncoder()
+y=encoder_y.fit_transform(y)
  
  
  
